@@ -1,0 +1,19 @@
+image: node:14
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Build
+            caches:
+              - node
+            script:
+              - npm install
+              - npm run build
+        - step:
+            name: Lint
+            caches:
+              - node
+            script:
+              - npm install
+              - npm run lint
