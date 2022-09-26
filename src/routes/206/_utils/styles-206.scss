@@ -1,0 +1,33 @@
+.employee-column {
+	width: 24%;
+}
+
+table {
+	table-layout: fixed;
+}
+.region-Eastern {
+	background-color: #4ac4e2;
+}
+
+.region-Central {
+	background-color: #d07382;
+}
+
+.region-Western {
+	background-color: #f4ef6a;
+}
+
+.stripe {
+	background-color: gainsboro;
+}
+
+.region-label {
+	font-weight: normal;
+}
+
+.employee-name {
+	font-weight: bold;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}

@@ -1,0 +1,62 @@
+@import '../node_modules/materialize-css/dist/css/materialize.css';
+
+html {
+	color: #212121;
+}
+
+body {
+	background-color: #efefef;
+}
+
+/* CSS grid classes */
+
+.two-across,
+.three-across,
+.four-across,
+.narrow-wide {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1.5rem;
+}
+
+@media only screen and (min-width: 601px) {
+	.two-across {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.three-across {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.four-across {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.narrow-wide {
+		grid-template-columns: 1fr 2fr;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	.four-across {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.nav-wrapper {
+	background-color: #2196f3;
+}
+
+.nav-btn {
+	color: white;
+	background-color: #2196f3;
+}
+
+.nav-btn:hover {
+	background-color: #1976d2;
+}
+
+.nav-btn-active {
+	background-color: green;
+}
+
+.nav-btn-active:hover {
+	background-color: rgb(0, 102, 0);
+}
